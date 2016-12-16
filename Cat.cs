@@ -20,6 +20,7 @@ using System.IO;
 namespace csharp_study
 {
 
+    [Serializable]
     sealed class Cat : ICloneable
     {
 
@@ -224,10 +225,10 @@ namespace csharp_study
     	public override string ToString()
     	{
     		return base.ToString() + ": Name = " + _name + 
-    								", Breed = " + _breed + 
-    								", Age = " + _age +
-    								", Weight (kg) = " + _weight +
-    								", Colour(s) = " + _colour;
+    							", Breed = " + _breed + 
+    							", Age = " + _age +
+    							", Weight (kg) = " + _weight +
+    							", Colour(s) = " + _colour;
     	}
 
     }
